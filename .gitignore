@@ -1,0 +1,6 @@
+scripts/solution.js
+styles/solution.css
+.DS_Store
+*.log
+Thumbs.db
+node_modules
