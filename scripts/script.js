@@ -38,130 +38,129 @@ const personRegister = [
     employeeId: 6,
     name: "Kristina Pavlovic",
     address: "Biblioteksgata 45",
-    phone: "45464748"
+    phone: "45464748",
   },
   {
     employeeId: 7,
     name: "Lucia Talaga",
     address: "Lindealléen 14",
-    phone: "92929292"
+    phone: "92929292",
   },
   {
     employeeId: 8,
     name: "Frederik Granlund",
     address: "Rosenkrantz gate 30",
-    phone: "43211234"
+    phone: "43211234",
   },
   {
     employeeId: 9,
     name: "Marialuisa Varallo",
     address: "Håndverkergata 2",
-    phone: "90909090"
+    phone: "90909090",
   },
   {
     employeeId: 10,
     name: "Sho Yasutake",
     address: "Handelsveien 19",
-    phone: "45674567"
-  }
+    phone: "45674567",
+  },
 ];
 
 const salaryRegister = [
   {
     employeeId: 1,
-    salary: 1000000
+    salary: 1000000,
   },
   {
     employeeId: 2,
-    salary: 800000
+    salary: 800000,
   },
   {
     employeeId: 3,
-    salary: 530000
+    salary: 530000,
   },
   {
     employeeId: 4,
-    salary: 500000
+    salary: 500000,
   },
   {
     employeeId: 5,
-    salary: 450000
+    salary: 450000,
   },
   {
     employeeId: 6,
-    salary: 800000
+    salary: 800000,
   },
   {
     employeeId: 7,
-    salary: 480000
+    salary: 480000,
   },
   {
     employeeId: 8,
-    salary: 520000
+    salary: 520000,
   },
   {
     employeeId: 9,
-    salary: 750000
+    salary: 750000,
   },
   {
     employeeId: 10,
-    salary: 550000
-  }
+    salary: 550000,
+  },
 ];
 
 const roleRegister = [
   {
     employeeId: 1,
     role: "Grunnlegger og CEO",
-    department: "Ledelsen"
+    department: "Ledelsen",
   },
   {
     employeeId: 2,
     role: "Daglig leder",
-    department: "Ledelsen"
+    department: "Ledelsen",
   },
   {
     employeeId: 3,
     role: "Skiftleder",
-    department: "Medarbeidere"
+    department: "Medarbeidere",
   },
   {
     employeeId: 4,
     role: "Regnskapsmedarbeider",
-    department: "Administrasjonen"
+    department: "Administrasjonen",
   },
   {
     employeeId: 5,
     role: "Butikkmedarbeider",
-    department: "Medarbeidere"
+    department: "Medarbeidere",
   },
   {
     employeeId: 6,
     role: "Markedssjef",
-    department: "Ledelsen"
+    department: "Ledelsen",
   },
   {
     employeeId: 7,
     role: "Butikkmedarbeider",
-    department: "Medarbeidere"
+    department: "Medarbeidere",
   },
   {
     employeeId: 8,
     role: "Butikkmedarbeider",
-    department: "Medarbeidere"
+    department: "Medarbeidere",
   },
   {
     employeeId: 9,
     role: "HR-leder",
-    department: "Administrasjonen"
+    department: "Administrasjonen",
   },
   {
     employeeId: 10,
     role: "HR-medarbeider",
-    department: "Administrasjonen"
-  }
+    department: "Administrasjonen",
+  },
 ];
-
 
 /**
  * Logikk
@@ -169,18 +168,36 @@ const roleRegister = [
  * Du skal ikke skrive kode annet enn i de tre funksjonene!
  */
 
-function createNewRegister() {
-
-}
+function createNewRegister() {}
 
 function createEmployeeCard(employee) {
+  const container = document.getElementById("department-list");
 
+  if (Array.isArray(employee) && employee.length === 0) {
+    console.error("employee did not return an array");
+    return;
+  }
+
+  const fkgnjkdngJsdf = `<div class="card-title">
+  <h2 class="category">#TitlePlaceholder#</h2>
+  </div>`;
+
+  //container.innerHTML += cartTitle;
+
+  employee.forEach((card) => {
+    const content = `
+    <div class="employee-card">
+    <div class="employee-image"><img src="assets/images/avatar.jpg" alt="Avatar image of employee" /></div>
+    <div class="
+    </div>`;
+
+    container.innerHTML += content;
+  });
 }
 
 function renderEmployees() {
-
+  createEmployeeCard(personRegister);
 }
-
 
 /**
  * Når siden er ferdig med å laste, skal kun renderEmployees() kjøres.

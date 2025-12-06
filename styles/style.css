@@ -15,7 +15,10 @@ body {
   color: #2e3440;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.1;
 }
 
@@ -23,4 +26,8 @@ h1, h2, h3, h4 {
   inline-size: min(60rem, 100%);
   margin-inline: auto;
   padding: 3rem 1rem;
+}
+
+.employee-image img {
+  max-width: 200px;
 }
